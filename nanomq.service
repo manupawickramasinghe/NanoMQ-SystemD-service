@@ -1,0 +1,18 @@
+[Unit]
+Description=NanoMq Service
+
+[Service]
+Type=simple
+User=ubuntu
+ExecStart=/usr/local/bin/nanomq start --conf /etc/nanomq.conf
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+
+
+
+
+
+
+
